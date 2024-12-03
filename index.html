@@ -26,36 +26,30 @@
             margin: 5px 0;
             font-size: 1rem;
         }
-        .audio-section {
-            margin: 20px auto;
-            max-width: 800px;
-            padding: 10px;
-            background: #fff;
-            border-radius: 8px;
+        table {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto 30px;
+            border-collapse: collapse;
+            background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
         }
-        .audio-section h2 {
-            font-size: 1.4rem;
-            margin-bottom: 10px;
-        }
-        .audio-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
-            padding: 10px;
+        table th, table td {
+            padding: 15px;
+            text-align: center;
             border-bottom: 1px solid #ddd;
         }
-        .audio-row:last-child {
-            border-bottom: none;
+        table th {
+            background-color: #4CAF50;
+            color: white;
         }
-        .audio-row h3 {
-            font-size: 1rem;
-            flex: 1;
+        table tr:hover {
+            background-color: #f1f1f1;
         }
-        .audio-row audio {
-            flex: 2;
-            max-width: 100%;
+        audio {
+            width: 90%;
         }
     </style>
 </head>
@@ -69,64 +63,77 @@
         <p><strong>Email:</strong> <a href="mailto:hc.chung@kt.com" style="color: #4db8ff;">hc.chung@kt.com</a></p>
     </header>
 
-    <!-- Audio Comparison Section -->
-    <div class="audio-section">
-        <h2>Audio Comparisons</h2>
-
-        <!-- Ground Truth -->
-        <div class="audio-row">
-            <h3>Ground Truth</h3>
-            <audio controls>
-                <source src="audio/ground_truth.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-
-        <!-- AudioGAN -->
-        <div class="audio-row">
-            <h3>AudioGAN</h3>
-            <audio controls>
-                <source src="audio/audiogan.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-
-        <!-- AudioLDM -->
-        <div class="audio-row">
-            <h3>AudioLDM</h3>
-            <audio controls>
-                <source src="audio/audioldm.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-
-        <!-- AudioLDM2 -->
-        <div class="audio-row">
-            <h3>AudioLDM2</h3>
-            <audio controls>
-                <source src="audio/audioldm2.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-
-        <!-- Tango -->
-        <div class="audio-row">
-            <h3>Tango</h3>
-            <audio controls>
-                <source src="audio/tango.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-
-        <!-- Tango2 -->
-        <div class="audio-row">
-            <h3>Tango2</h3>
-            <audio controls>
-                <source src="audio/tango2.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-    </div>
+    <!-- Audio Comparison Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Text Prompt</th>
+                <th>Ground Truth</th>
+                <th>AudioGAN</th>
+                <th>AudioLDM2</th>
+                <th>Tango2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A series of burping.</td>
+                <td><audio controls>
+                    <source src="audio/Ground_Truth_1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="audio/AudioGAN_1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="audio/AudioLDM2_1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="audio/Tango2_1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></td>
+            </tr>
+            <tr>
+                <td>A rocket flies by followed by a loud explosion and fire crackling as a truck engine runs.</td>
+                <td><audio controls>
+                    <source src="audio/Ground_Truth_2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="audio/AudioGAN_2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="audio/AudioLDM2_2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="audio/Tango2_2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></td>
+            </tr>
+            <tr>
+                <td>A ticktock sound playing at the same rhythm with piano.</td>
+                <td><audio controls>
+                    <source src="audio/Ground_Truth_3.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="audio/AudioGAN_3.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="audio/AudioLDM2_3.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></td>
+                <td><audio controls>
+                    <source src="audio/Tango2_3.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></td>
+            </tr>
+        </tbody>
+    </table>
 
 </body>
 </html>

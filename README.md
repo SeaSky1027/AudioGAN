@@ -12,5 +12,5 @@
 AudioGAN is a novel GAN-based model tailored for compact and efficient text-to-audio generation.
 
 <div align="center">
-  <img src="images/result1.png" alt="" width="500">
+  <img src="images/result1.png" alt="" width="800">
 </div>

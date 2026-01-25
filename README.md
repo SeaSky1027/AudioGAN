@@ -1,7 +1,9 @@
 <div align="center">
 <p align="center">
-  <h1>AudioGAN: A Compact and Efficient Framework for Real-Time High-Fidelity Text-to-Audio Generation</h1>
-  <!-- <a href=>Paper</a> | <a href="https://meanaudio.github.io/">Webpage</a>  -->
+  <h1 style="white-space: pre-line;">
+  AudioGAN: A Compact and Efficient Framework
+  for Real-Time High-Fidelity Text-to-Audio Generation
+  </h1>
 
   [![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2512.22166)
 

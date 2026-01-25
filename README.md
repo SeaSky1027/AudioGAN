@@ -1,7 +1,7 @@
 <div align="center">
 <p align="center">
   <h1 style="white-space: pre-line;">
-  AudioGAN: A Compact and Efficient Framework
+  AudioGAN: A Compact and Efficient Framework<br>
   for Real-Time High-Fidelity Text-to-Audio Generation
   </h1>
 
